@@ -66,4 +66,14 @@ public class QuizController {
     	dtoList.add(new PersonDTO("도우너",40,"부산 문래동"));
     	model.addAttribute("list", dtoList);
     }
+    @GetMapping({"/q8", "/q9"})
+    public void ex8(Model model){
+        java.util.List<PersonDTO> dtoList = new ArrayList<>();
+        dtoList.add(new PersonDTO("박하나",25,"인천 구월동"));
+        dtoList.add(new PersonDTO("홍재범",17,"서울 신림동"));
+        dtoList.add(new PersonDTO("문유리",31,"부산 문래동"));
+        dtoList.add(new PersonDTO("김재민",8,"인천 연수동"));
+        dtoList.add(new PersonDTO("장유라",33,"부산 문래동"));
+        model.addAttribute("list", dtoList);
+    }
 }
